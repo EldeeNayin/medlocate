@@ -20,10 +20,10 @@ export function useHospitals(filters: SearchFilters = {}): HospitalsState & { re
       let query = supabase.from('hospitals').select('*');
 
       if (filters.query) {
-        query = query.or(
-          `name.ilike.%${filters.query}%,city.ilike.%${filters.query}%,lga.ilike.%${filters.query}%`,
-        );
-      }
+  query = query.or(
+    `name.ilike.%${filters.query}%,city.ilike.%${filters.query}%,lga.ilike.%${filters.query}%,state.ilike.%${filters.query}%`,
+  );
+}
       if (filters.city)      query = query.ilike('city', `%${filters.city}%`);
       if (filters.lga)       query = query.ilike('lga', `%${filters.lga}%`);
       if (filters.specialty) query = query.contains('specialties', [filters.specialty]);
