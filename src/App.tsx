@@ -9,10 +9,10 @@ import { SignupPage }         from '@/pages/SignupPage';
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route element={<AppShell />}>
-          <Route index       element={<HomePage />} />
+          <Route index                     element={<HomePage />} />
           <Route path="search"             element={<SearchPage />} />
           <Route path="hospital/:id"       element={<HospitalDetailPage />} />
           <Route path="admin"              element={<AdminPage />} />
