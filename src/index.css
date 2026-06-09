@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    font-family: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: theme('colors.ink.DEFAULT');
+    background-color: theme('colors.surface.subtle');
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Bricolage Grotesque', ui-sans-serif, sans-serif;
+  }
+
+  /* Mapbox marker overrides */
+  .marker {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: theme('colors.brand.600');
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
+    transition: transform 0.15s;
+  }
+  .marker:hover, .marker--selected {
+    transform: scale(1.25);
+    background-color: theme('colors.brand.700');
+  }
+}
+
+@layer utilities {
+  .line-clamp-1  { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+  .line-clamp-2  { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+}
