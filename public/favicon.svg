@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background rounded square -->
+  <rect width="32" height="32" rx="8" fill="#16a34a"/>
+  <!-- Stethoscope icon (simplified, white) -->
+  <!-- Ear tips -->
+  <circle cx="10" cy="8" r="1.5" fill="white"/>
+  <circle cx="22" cy="8" r="1.5" fill="white"/>
+  <!-- Ear tubes -->
+  <path d="M10 9.5 L10 13 Q10 17 16 17 Q22 17 22 13 L22 9.5" 
+        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Chest piece tube -->
+  <line x1="16" y1="17" x2="16" y2="22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <!-- Chest piece circle -->
+  <circle cx="16" cy="24.5" r="2.5" stroke="white" stroke-width="2" fill="none"/>
+  <!-- Cross on chest piece -->
+  <line x1="16" y1="23" x2="16" y2="26" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="14.5" y1="24.5" x2="17.5" y2="24.5" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
